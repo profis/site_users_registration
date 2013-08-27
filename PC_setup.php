@@ -17,5 +17,9 @@ function site_users_registration_install($controller) {
 	$core->Set_variable_if('en', 'activation_unsuccessful', 'Activation unsuccessful', $plugin_name);
 	$core->Set_variable_if('ru', 'activation_unsuccessful', 'Счет подтверждение не удалось.', $plugin_name);
 	
+	$core->Set_variable_if('lt', 'email_tpl_activation', '', $plugin_name);
+	$core->Set_variable_if('en', 'email_tpl_activation', '', $plugin_name);
+	$core->Set_variable_if('ru', 'email_tpl_activation', '', $plugin_name);
+
 	return true;
 }
