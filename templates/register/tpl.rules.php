@@ -1,5 +1,10 @@
 <?php 
-
+/**
+ * @var PC_plugin_site_users_registration_register_widget $this
+ * @var string $tpl_group
+ * @var bool $edit
+ * @var PC_site_user_model $site_user_model
+ */
 
 $site_user_model->add_filter(array (
 	'field' => 'email',
@@ -19,13 +24,3 @@ if (!$this->_config['edit']) {
 		'rule' => 'required'
 	));
 }
-
-
-$this->debug('Filters:', 3);
-$this->debug($site_user_model->get_filters(), 4);
-
-$this->debug('Rules:', 3);
-$this->debug($site_user_model->get_rules(), 4);
-
-?>
-

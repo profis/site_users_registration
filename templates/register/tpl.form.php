@@ -1,4 +1,13 @@
 <?php
+/**
+ * @var PC_plugin_site_users_registration_register_widget $this
+ * @var string $tpl_group
+ * @var bool $edit
+ * @var PC_site_user_model $site_user_model
+ * @var string $error_message
+ * @var array $result
+ * @var array $data
+ */
 
 function pc_sur_error($variable, &$result, $field) {
 	if (!isset($result['errors'])) {
